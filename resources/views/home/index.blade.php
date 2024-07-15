@@ -29,6 +29,7 @@
             <div class="card">
                 <div class="card-header">Posts</div>
                 @foreach ($posts as $post )
+                <div class="card border border-primary rounded m-2">
                     <div class="card-body">
                         <h3>@ {{$post->user->username}}</h3>
                         <p>{{ $post->content }}</p>
@@ -63,6 +64,7 @@
                             </div>
                         </div>
                     </form>
+                </div>
                 @endforeach
             </div>
         </div>

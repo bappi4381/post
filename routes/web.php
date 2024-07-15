@@ -44,5 +44,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
         Route::post('/comment', 'CommentController@store')->name('comments.store');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
         Route::post('/posts/{post}/like', 'PostController@like')->name('posts.like');
+
+        Route::get('/posts', 'HomeController@index')->name('posts.index');
+        
+
     });
 });
